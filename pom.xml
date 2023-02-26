@@ -15,6 +15,7 @@
     <description>Telegram_Bot_Shelter_For_Pets</description>
     <properties>
         <java.version>17</java.version>
+        <telegrambot.starter.version>6.5.0</telegrambot.starter.version>
     </properties>
     <dependencies>
         <dependency>
@@ -23,9 +24,20 @@
         </dependency>
 
         <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-spring-boot-starter</artifactId>
+            <version>${telegrambot.starter.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
